@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+.main {
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+}
+
+.nav {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    min-width: 100%;
+    height: 80px;
+    justify-content: space-around;
+    background-color: white;
+    z-index: 999;
+}
+
+.nav ul {
+    display: flex;
+}
+.nav ul li {
+    padding: 30px 50px;
+}
+.logo:hover {
+    cursor: pointer;
+    transition: .3s;
+    filter: invert(20%)
+}
+
+.li-hire {
+    color: white;
+    background-color: #FD0E3B;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 93% 100%, 0 100%, 0% 50%);
+}
+
+.li-hire:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #202020;
+    transition: 1s;
+}
+.li-dev {
+    border-left: 1px solid rgb(119, 119, 119);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 93% 100%, 0 100%, 0% 50%);
+}
+.li-dev:hover {
+    cursor: pointer;
+    color: #FD0E3B;
+    transition: .3s;
+}
+.li-com:hover {
+    cursor: pointer;
+    color: #FD0E3B;
+    transition: .3s;
+}
+.li-case:hover {
+    cursor: pointer;
+    color: #FD0E3B;
+    transition: .3s;
+}
+.li-blog:hover {
+    cursor: pointer;
+    color: #FD0E3B;
+    transition: .3s;
+}
+.li-com {
+    border-left: 1px solid #CCC;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 93% 100%, 0 100%, 0% 50%);
+}
+.li-case {
+    border-left: 1px solid #CCC;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 93% 100%, 0 100%, 0% 50%);
+}
+.li-blog {
+    border-left: 1px solid #CCC;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 93% 100%, 0 100%, 0% 50%);
+}
+.footer {
+    display: flex;
+    position: fixed;
+    min-width: 100vw;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    z-index: 999;
+    bottom: 0;
+}
+.footer img {
+    width: 120px;
+    padding: 20px;
+    margin-left: 30px;
+    filter: grayscale(10000%);
+}
+i {
+    color: white;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 600px;
+    left: 37%;
+    top: 38vh;
+    z-index: 9999;
+}
+.text h2 {
+    position: absolute;
+    font-size: 50pt;
+    font-weight: 1500;
+    color: black;
+}
+.text h1 {
+    margin-top: 40px;
+    margin-left: 30px;
+    font-size: 80pt;
+}
+.text h3 {
+    position: absolute;
+    margin-right: 50px;
+    margin-top: 130px;
+    font-size: 40pt;
+    font-weight: lighter; 
+}
+.container {
+    display: flex;
+    margin-top: 30px;
+    width: 100vw;
+    transition: 0.5s;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+}
+.container .clip {
+    background-image: url("left.jpg");
+    background-repeat: no-repeat;
+    background-size: 1100px;
+    background-position: center;
+    position: relative;
+    pointer-events: none;
+    width: 100vh;
+}
+.buttonLeft {
+    position: absolute;
+    padding: 20px;
+    width: 250px;
+    justify-content: center;
+    text-align: center;
+    left: 0;
+    top: 180px;
+    border: none;
+    outline: 0;
+    z-index: 999;
+    margin: 200px 200px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .3s;
+}
+.buttonLeft:hover {
+    animation: clipeLeft;
+    animation-fill-mode: forwards;
+}
+
+@keyframes clipeLeft {
+    from {
+        clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+        background-color: #202020;
+        color: white;
+    }
+    to {
+        clip-path: polygon(100% 0, 10% 0, 0 100%, 90% 100%);
+        background-color: #202020;
+        color: white;
+
+    }
+}
+
+.buttonLeft:hover  + .container {
+    clip-path: polygon(90% 0, 0 0, 0 100%, 70% 100%);
+}
+
+
+/*              =============================================            */
+
+
+.container1 {
+    display: flex;
+    margin-top: 30px;
+    width: 100vw;
+    height: 100vh;
+    transition: 0.5s;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+.container1 .clipe {
+    background-image: url("right.jpg");
+    background-repeat: no-repeat;
+    background-size: 1100px;
+    background-position: center;
+    position: relative;
+    pointer-events: none;
+    width: 100vh;
+}
+.buttonRight {
+    position: absolute;
+    width: 250px;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    right: 0;
+    top: 180px;
+    border: none;
+    outline: 0;
+    z-index: 999;
+    margin: 200px 200px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.buttonRight:hover {
+    animation: clipeRight;
+    animation-fill-mode: forwards;
+}
+
+@keyframes clipeRight {
+    from {
+        clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
+        background-color: #FD0E3B;
+        color: white;
+    }
+    to {
+        clip-path: polygon(100% 0, 10% 0, 0 100%, 90% 100%);
+        background-color: #FD0E3B;
+        color: white;
+    }
+}
+.buttonRight:hover  + .container1 {
+    clip-path: polygon(100% 0, 20% 0, 0 100%, 100% 100%);
+
+}
+
