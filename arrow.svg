@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="75px" height="15px" viewBox="0 0 75 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="1160 944 0.424 944 200 0 1160 0"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="00_01_Homepage_Companies" transform="translate(-1705.000000, -456.000000)">
+            <g id="For-Companies" transform="translate(760.000000, 0.000000)">
+                <g id="img">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                </g>
+                <g id="btn" transform="translate(667.000000, 456.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <path d="M345.494975,-1.86517468e-14 L352.989949,7.49497475 L345.494975,14.9899495 L344.505025,14 L350.31,8.194 L278,8.19497475 L278,6.79497475 L350.31,6.794 L344.505025,0.989949494 L345.494975,-1.86517468e-14 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
